@@ -1,0 +1,108 @@
+# formularioo
+
+# Formulario
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estformu.css">
+    <title>Cuestionario</title>
+</head>
+<body>
+
+
+    <h1>Dia del estudiante</h1>
+    <p>El Centro de Estudiantes de la Escuela Experimental ProA Técnica se encuentra organizando los festejos del día del Estudiante.
+        <br/>Para dicho evento, deberá ingresar los siguientes datos: </p>
+    <hr>
+    <br/>
+    <section>
+        <form name="formulario" id="formulario" method="get">
+            <label for="fname">Nombre:</label><br>
+            <input type="text" name="fname" id="fname" placeholder="Ejemplo: Leonel" required><br>
+            <br/>
+            <label for="lname">Apellido:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Ejemplo: Kuriger"><br>
+            <br/>
+            <label for="fecha">Fecha de nacimiento:</label><br>
+            <input type="date" id="fecha" name="fecha" required><br>
+            <br/>
+            <label for="numero">DNI:</label><br>
+            <input pattern="[0-9]{8}" name="numero" id="numero" title="Inserte su DNI" required><br>
+            <br/>
+            <label for="lname">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <br/>
+            <label for="lname">Celular:</label><br>
+            <input type="search" id="numero" name="numero" placeholder="codigo de área + número"><br>
+            <br/>
+            <label for="lname">Localidad:</label><br>
+            <datalist id="loc">
+                <option value="Aroyito"></option>
+                <option value="Devoto"></option>
+                <option value="Freyre"></option>
+                <option value="Frontera"></option>
+                <option value="Rafaela"></option>
+                <option value="Rosario"></option>
+                <option value="Santa Fé"></option>
+                <option value="San Francisco"></option>
+                <option value="Villa María"></option>
+            </datalist>
+            <input type="text" id="lname" name="lname" list="loc"><br>
+            <br/>
+            <label for="lname">Marque la opción que corresponde:</label><br>
+            <input type="checkbox" id="tutores1" name="tutores1" value="genero">
+            <label for="tutores1">Padre / Madre</label><br>
+            <input type="checkbox" id="tutores2" name="tutores2" value="genero2">
+            <label for="tutores2"> Estudiante</label><br>
+            <input type="checkbox" id="tutores3" name="tutores3" value="genero3">
+            <label for="tutores3"> Tutor</label><br>
+            <br/>
+            <p>En caso de que sea estudiante, ingrese el año y división al que va.</p>
+            <label for="lname">Año y división:</label><br>
+            <datalist id="ayd">
+                <option value="1to A/S"></option>
+                <option value="1to B/F"></option>
+                <option value="2to A/S"></option>
+                <option value="2to B/F"></option>
+                <option value="3to A/S"></option>
+                <option value="3to B/F"></option>
+                <option value="4to A/S"></option>
+                <option value="4to B/F"></option>
+                <option value="5to A/S"></option>
+                <option value="5to B/F"></option>
+                <option value="6to A/S"></option>
+                <option value="7to A/S"></option>
+            </datalist>
+            <input type="text" id="año" name="año" list="ayd" required><br>
+            <br/>
+            <label for="lname">Campeonatos a los que se inscribe:</label><br>
+            <br/>
+            <input type="checkbox" id="Campeonato1" name="Campeonato1" value="futbol">
+            <label for="Campeonato1"> Campeonato de penales (fútbol)</label><br>
+            <input type="checkbox" id="Campeonato2" name="Campeonato2" value="basquet">
+            <label for="Campeonato2"> campeonato de libres (básquet)</label><br>
+            <input type="checkbox" id="Campeonato3" name="Campeonato3" value="ping-pong">
+            <label for="Campeonato3"> ping-pong</label><br>
+            <input type="checkbox" id="Campeonato4" name="Campeonato4" value="programación">
+            <label for="Campeonato4"> competencia de programación</label><br>
+            <input type="checkbox" id="Campeonato5" name="Campeonato5" value="Karaoke">
+            <label for="Campeonato5">Karaoke</label><br>
+
+            <br/>
+            <label for="elcolor">Ingrese color de pechera</label><br/>
+            <input type="color" id="elcolor" name="elcolor"><br/>
+
+            <br/>
+
+            <input type="submit">
+        </form>
+    </section>
+    <br/>
+    <hr>
+
+</body>
+</html>
